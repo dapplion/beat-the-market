@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/beat-the-market/precache-manifest.ab7b034b414890dd9cad7765f21eef52.js"
+  "/beat-the-market/precache-manifest.ffce028888dbb90e887fd1eb6e174130.js"
 );
 
 self.addEventListener('message', (event) => {
