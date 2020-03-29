@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/beat-the-market/static/css/main.1b6a2fe0.chunk.css",
+    "main.js": "/beat-the-market/static/js/main.a4bd6b9f.chunk.js",
+    "main.js.map": "/beat-the-market/static/js/main.a4bd6b9f.chunk.js.map",
+    "runtime-main.js": "/beat-the-market/static/js/runtime-main.3aa8d487.js",
+    "runtime-main.js.map": "/beat-the-market/static/js/runtime-main.3aa8d487.js.map",
+    "static/js/2.7416cf69.chunk.js": "/beat-the-market/static/js/2.7416cf69.chunk.js",
+    "static/js/2.7416cf69.chunk.js.map": "/beat-the-market/static/js/2.7416cf69.chunk.js.map",
+    "index.html": "/beat-the-market/index.html",
+    "precache-manifest.ab7b034b414890dd9cad7765f21eef52.js": "/beat-the-market/precache-manifest.ab7b034b414890dd9cad7765f21eef52.js",
+    "service-worker.js": "/beat-the-market/service-worker.js",
+    "static/css/main.1b6a2fe0.chunk.css.map": "/beat-the-market/static/css/main.1b6a2fe0.chunk.css.map",
+    "static/js/2.7416cf69.chunk.js.LICENSE.txt": "/beat-the-market/static/js/2.7416cf69.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3aa8d487.js",
+    "static/js/2.7416cf69.chunk.js",
+    "static/css/main.1b6a2fe0.chunk.css",
+    "static/js/main.a4bd6b9f.chunk.js"
+  ]
+}
