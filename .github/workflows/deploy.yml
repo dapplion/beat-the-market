@@ -15,4 +15,8 @@ jobs:
         uses: actions/setup-node@v1
       - run: yarn
       - run: node data/processData
-      - run: yarn deploy
+      - name: Deploy
+        run: |
+          git config --global user.email "deployer@dapp.lion"
+          git config --global user.name "deployer"
+          yarn deploy
