@@ -1,0 +1,141 @@
+:root {
+  --background-color: #252525;
+  --less-dark-color: #414141;
+  --main-color: #ff0000;
+  --main-color-darker: #af0404;
+  --card-background-color: #292929;
+  --text-color: white;
+}
+
+#root {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  white-space: nowrap;
+  .split {
+    color: var(--less-dark-color);
+  }
+  strong {
+    color: var(--main-color);
+  }
+  table {
+    margin: auto;
+    th:not(:last-child),
+    td:not(:last-child) {
+      padding-right: 1rem;
+    }
+  }
+}
+
+.instructions {
+  position: absolute;
+  // Create a box that covers the center
+  --side-percent: 25%;
+  left: var(--side-percent);
+  right: var(--side-percent);
+  top: 160px;
+  bottom: 50%;
+  padding-top: 5%;
+  transition: ease 0.25s;
+  font-size: 1.2rem;
+  cursor: pointer;
+  strong {
+    font-size: 130%;
+  }
+  &:hover {
+    color: var(--main-color);
+  }
+  z-index: 100;
+
+  .help {
+    margin-top: 3px;
+    font-size: 66%;
+    color: #777777;
+  }
+}
+
+.restart,
+.market-name {
+  position: absolute;
+  // Create a box that exists on the side
+  --distance-from-side: 30px;
+  top: 75px;
+  width: 110px;
+  height: 50px;
+
+  small,
+  big {
+    font-size: 1.2rem;
+  }
+  small {
+    display: none;
+    svg {
+      font-size: 1.8rem;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    width: 65px;
+    small {
+      display: flex; // Center icon
+    }
+    big {
+      display: none;
+    }
+  }
+  strong {
+    font-size: 120%;
+  }
+
+  // Center internal text
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // Button feeling
+  transition: ease 0.25s;
+  background-color: #2f2f2f;
+  border-radius: 8px;
+
+  // Control text
+  white-space: nowrap;
+}
+
+.restart {
+  position: absolute;
+  // On the right
+  right: var(--distance-from-side);
+
+  // Button feeling
+  cursor: pointer;
+  &:hover {
+    color: var(--main-color);
+  }
+  z-index: 100;
+}
+
+.market-name {
+  position: absolute;
+  // On the left
+  left: var(--distance-from-side);
+}
+
+.price-chart-container {
+  flex: auto;
+  padding: 1rem;
+  opacity: 1;
+  &.loading {
+    opacity: 0;
+  }
+}

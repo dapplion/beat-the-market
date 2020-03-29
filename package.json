@@ -1,25 +1,33 @@
 {
-  "name": "hodl-game",
+  "name": "beat-the-market",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://dapplion.github.io/beat-the-market",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.0",
+    "@types/lodash": "^4.14.149",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-icons": "^3.9.0",
     "react-scripts": "3.4.1",
+    "recharts": "^1.8.5",
     "typescript": "~3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "prepare": "node data/processData"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +43,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@types/recharts": "^1.8.9",
+    "csvtojson": "^2.0.10",
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.13.1",
+    "prettier": "^2.0.2",
+    "source-map-explorer": "^2.4.1"
+  },
+  "license": "GPL-3.0"
 }
